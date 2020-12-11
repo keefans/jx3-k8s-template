@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: keefans
+    provider: github
+    repository: python04
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: keefans-python04
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/keefans/python04.git
+  org: keefans
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: python04
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/keefans/python04
