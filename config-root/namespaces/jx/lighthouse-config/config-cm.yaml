@@ -8,6 +8,9 @@ data:
     in_repo_config:
       enabled:
         keefans/jx3-k8s-template: true
+        keefans/python01: true
+        keefans/python02: true
+        keefans/python03: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +23,9 @@ data:
         skip-unknown-contexts: false
       merge_method:
         keefans/jx3-k8s-template: merge
+        keefans/python01: merge
+        keefans/python02: merge
+        keefans/python03: merge
       queries:
       - labels:
         - approved
@@ -31,6 +37,9 @@ data:
         - needs-rebase
         repos:
         - keefans/jx3-k8s-template
+        - keefans/python01
+        - keefans/python02
+        - keefans/python03
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +50,9 @@ data:
         - needs-rebase
         repos:
         - keefans/jx3-k8s-template
+        - keefans/python01
+        - keefans/python02
+        - keefans/python03
       target_url: http://dashboard-jx.jx3.sky-cloud.net
 kind: ConfigMap
 metadata:
