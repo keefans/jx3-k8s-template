@@ -12,6 +12,7 @@ data:
         keefans/python02: true
         keefans/python03: true
         keefans/python04: true
+        keefans/python05: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -28,6 +29,7 @@ data:
         keefans/python02: merge
         keefans/python03: merge
         keefans/python04: merge
+        keefans/python05: merge
       queries:
       - labels:
         - approved
@@ -43,6 +45,7 @@ data:
         - keefans/python02
         - keefans/python03
         - keefans/python04
+        - keefans/python05
       - labels:
         - updatebot
         missingLabels:
@@ -57,6 +60,7 @@ data:
         - keefans/python02
         - keefans/python03
         - keefans/python04
+        - keefans/python05
       target_url: http://dashboard-jx.jx3.sky-cloud.net
 kind: ConfigMap
 metadata:
