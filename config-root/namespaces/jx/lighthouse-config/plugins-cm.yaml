@@ -6,6 +6,22 @@ data:
       repos:
       - keefans/jx3-k8s-template
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - keefans/python01
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - keefans/python02
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - keefans/python03
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - keefans/python04
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -37,6 +53,70 @@ data:
       - cat
       - dog
       - pony
+      keefans/python01:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      keefans/python02:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      keefans/python03:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      keefans/python04:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -49,6 +129,20 @@ data:
     - repos:
       - keefans/jx3-k8s-template
       trusted_org: todo
+    - repos:
+      - keefans/python01
+      trusted_org: todo
+    - repos:
+      - keefans/python02
+      trusted_org: todo
+    - repos:
+      - keefans/python03
+      trusted_org: todo
+    - repos:
+      - keefans/python04
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
