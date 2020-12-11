@@ -9,4 +9,5 @@ spec:
     providerKind: github
     repositories:
     - name: python01
+    - name: python02
     scheduler: in-repo
