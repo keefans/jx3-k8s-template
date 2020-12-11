@@ -12,4 +12,5 @@ spec:
     - name: python02
     - name: python03
     - name: python04
+    - name: python05
     scheduler: in-repo
