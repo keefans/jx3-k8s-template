@@ -1,0 +1,49 @@
+# Source: python06/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-11T11:27:08Z"
+  deletionTimestamp: null
+  name: 'python06-0.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.1
+      sha: a111def1c973e695a34647873ac73517ab91a479
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 6177131e62013f992667120ee94e334329f87000
+    - author:
+        email: keefan2667@gmain.com
+        name: keefans
+      branch: master
+      committer:
+        email: keefan2667@gmain.com
+        name: keefans
+      message: |
+        chore: Jenkins X build pack
+      sha: 502b10371376fb5536715aba3d2b47d75c241329
+  gitHttpUrl: https://github.com/keefans/python06
+  gitOwner: keefans
+  gitRepository: python06
+  name: 'python06'
+  releaseNotesURL: https://github.com/keefans/python06/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}

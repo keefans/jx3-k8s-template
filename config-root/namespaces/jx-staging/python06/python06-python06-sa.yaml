@@ -1,0 +1,8 @@
+# Source: python06/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: python06-python06
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
